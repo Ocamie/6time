@@ -1,104 +1,13 @@
-/* Estilos base */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fafafa;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
 }
 
-header {
-    background-color: #ffffff;
-    border-bottom: 1px solid #dbdbdb;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-right: auto;
-}
-
-.search {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-}
-
-.search input {
-    border: 1px solid #dbdbdb;
-    border-radius: 5px;
-    padding: 8px;
-}
-
-.search button {
-    background-color: transparent;
-    border: none;
-    padding: 8px;
-    cursor: pointer;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333333;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #000000;
-}
-
-main {
-    padding: 20px;
-}
-
-.post-feed {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.post {
-    background-color: #ffffff;
-    border: 1px solid #dbdbdb;
-    border-radius: 10px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #ffffff;
-    border-top: 1px solid #dbdbdb;
-}
-
-/* Estilo del botón flotante */
-.floating-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background-color: #0095f6;
-    border-radius: 50%;
-    color: #ffffff;
-    font-size: 2rem;
-    text-align: center;
-    line-height: 50px;
-    cursor: pointer;
+form {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
