@@ -1,13 +1,194 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
+/* styles.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
+/* Estilo de la barra de navegación */
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #dbdbdb;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #262626;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #0095f6;
+}
+
+/* Estilo del contenedor principal */
+main {
+    padding-top: 60px;
+    max-width: 935px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para el formulario de creación de publicaciones */
 form {
-  margin: 20px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input[type="text"],
+form input[type="file"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+form button {
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #007bb5;
+}
+
+/* Estilos para las publicaciones */
+.post {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.post img {
+    max-width: 100%;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.post p {
+    color: #262626;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.post div {
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+/* Estilos para la página del perfil del usuario */
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #dbdbdb;
+    margin-right: 20px;
+}
+
+.profile-info h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    font-size: 14px;
+    color: #8e8e8e;
+}
+
+/* Estilo para la lista de publicaciones en el perfil */
+#user-posts ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#user-posts ul li {
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos adicionales para la página de búsqueda */
+#result-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#result-list li {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+#result-list img {
+    max-width: 100%;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los hashtags populares */
+#hashtag-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#hashtag-list li {
+    font-size: 14px;
+    color: #0095f6;
+    margin-bottom: 5px;
 }
