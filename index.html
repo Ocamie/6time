@@ -1,34 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Reddin</title>
-</head>
-<body>
-    <header>
-        <div class="logo">Reddin</div>
-        <div class="search">
-            <input type="text" placeholder="Search">
-            <button>Search</button>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#" onclick="navigateTo('home')">Inicio</a></li>
-                <li><a href="#" onclick="navigateTo('profile')">Perfil</a></li>
-                <li><a href="#" onclick="navigateTo('settings')">Ajustes</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main id="main-content">
-        <!-- El contenido se actualizará dinámicamente aquí -->
-    </main>
-    <footer>
-        &copy; 2024 Reddin
-    </footer>
-    <div class="floating-btn">+</div>
+<form id="postForm">
+  <label for="description">Descripción:</label>
+  <textarea id="description" name="description" maxlength="5000"></textarea>
 
-    <script src="script.js"></script>
-</body>
-</html>
+  <label for="mediaUpload">Subir Imágenes/Videos:</label>
+  <input type="file" id="mediaUpload" name="mediaUpload" accept="image/*,video/*" multiple>
+
+  <label for="hashtags">Hashtags:</label>
+  <input type="text" id="hashtags" name="hashtags" placeholder="Escribe un hashtag...">
+
+  <button type="submit">Publicar</button>
+</form>
