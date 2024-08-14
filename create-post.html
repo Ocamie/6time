@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Publicación - Mi Sitio Web</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Enlace al archivo CSS -->
+    <script src="js/scripts.js" defer></script> <!-- Enlace al archivo JavaScript -->
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="search.html">Buscador</a></li>
+            <li><a href="create-post.html">Subir</a></li>
+            <li><a href="user-profile.html">Perfil</a></li>
+        </ul>
+    </nav>
 
+    <!-- Contenido principal -->
+    <main>
+        <h1>Crear Publicación</h1>
+        <form id="create-post-form" enctype="multipart/form-data">
+            <label for="post-description">Descripción:</label>
+            <textarea id="post-description" name="description" maxlength="5000" placeholder="Escribe una descripción..." required></textarea>
+
+            <label for="post-images">Imágenes (máx. 10):</label>
+            <input type="file" id="post-images" name="images" accept="image/*" multiple>
+
+            <label for="post-videos">Videos (máx. 10):</label>
+            <input type="file" id="post-videos" name="videos" accept="video/*" multiple>
+
+            <label for="post-notes">Notas (máx. 5000 caracteres):</label>
+            <textarea id="post-notes" name="notes" maxlength="5000" placeholder="Escribe una nota..."></textarea>
+
+            <label for="post-hashtags">Hashtags (separados por comas):</label>
+            <input type="text" id="post-hashtags" name="hashtags" placeholder="#hashtag1, #hashtag2">
+
+            <button type="submit">Publicar</button>
+        </form>
+    </main>
+</body>
+</html>
